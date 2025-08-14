@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Question Bank — Subsequence & Subarray Problems</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #34495e;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #2980b9;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+            margin-top: 25px;
+        }
+        .definition {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-left: 4px solid #95a5a6;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        ol {
+            counter-reset: item;
+        }
+        ol > li {
+            display: block;
+            margin-bottom: 0.5em;
+            margin-left: 2em;
+        }
+        ol > li:before {
+            content: counter(item, decimal) ". ";
+            counter-increment: item;
+            font-weight: bold;
+            color: #2980b9;
+        }
+        .problem-item {
+            padding: 8px 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        .problem-links {
+            margin-left: 20px;
+            font-size: 0.9em;
+        }
+        .problem-links a {
+            display: inline-block;
+            margin-right: 15px;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .leetcode-link {
+            background-color: #ffa116;
+            color: white;
+        }
+        .leetcode-link:hover {
+            background-color: #ff8c00;
+        }
+        .gfg-link {
+            background-color: #2f8d46;
+            color: white;
+        }
+        .gfg-link:hover {
+            background-color: #228b22;
+        }
+        .toc {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .toc h3 {
+            margin-top: 0;
+            color: #495057;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .toc li {
+            margin: 5px 0;
+        }
+        .toc a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        .note {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📜 Complete Question Bank — Subsequence & Subarray Problems</h1>
+        
+        <div class="toc">
+            <h3>📑 Table of Contents</h3>
+            <ul>
+                <li><a href="#subsequence">1. Subsequence Question Types</a></li>
+                <li><a href="#subarray">2. Subarray Question Types</a></li>
+                <li><a href="#index">3. Problem Index by Constraint</a></li>
+            </ul>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> Click on the LeetCode and GFG links to go directly to the problems. Some problems may have multiple variations or similar problems across platforms.
+        </div>
+
+        <section id="subsequence">
+            <h2>1. SUBSEQUENCE QUESTION TYPES</h2>
+            <div class="definition">
+                <strong>Definition:</strong> Not necessarily contiguous, but order preserved.
+            </div>
+
+            <h3>A. Basic / Checking</h3>
+            <ol>
+                <li class="problem-item">
+                    Check if S2 is a subsequence of S1 (string/array)
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/is-subsequence/" class="leetcode-link" target="_blank">LeetCode 392</a>
+                        <a href="https://www.geeksforgeeks.org/given-two-strings-find-first-string-subsequence-second/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Find if a given pattern exists as a subsequence
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/number-of-matching-subsequences/" class="leetcode-link" target="_blank">LeetCode 792</a>
+                        <a href="https://www.geeksforgeeks.org/find-number-times-string-occurs-given-string/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Check if all elements of one array form a subsequence in another
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/longest-common-subsequence/" class="leetcode-link" target="_blank">LeetCode 1143</a>
+                        <a href="https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+            </ol>
+
+            <h3>B. Counting</h3>
+            <ol start="4">
+                <li class="problem-item">
+                    Count subsequences equal to a given string
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/distinct-subsequences/" class="leetcode-link" target="_blank">LeetCode 115</a>
+                        <a href="https://www.geeksforgeeks.org/count-distinct-occurrences-as-a-subsequence/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Count distinct subsequences
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/distinct-subsequences-ii/" class="leetcode-link" target="_blank">LeetCode 940</a>
+                        <a href="https://www.geeksforgeeks.org/count-distinct-subsequences/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Count subsequences with sum = K
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/" class="leetcode-link" target="_blank">LeetCode 1498</a>
+                        <a href="https://www.geeksforgeeks.org/count-of-subsequences-having-sum-equal-to-x/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Count subsequences with product = K (or less/greater than K)
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/subarray-product-less-than-k/" class="leetcode-link" target="_blank">LeetCode 713</a>
+                        <a href="https://www.geeksforgeeks.org/count-subsequences-product-less-k/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Count subsequences divisible by K
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/subarray-sums-divisible-by-k/" class="leetcode-link" target="_blank">LeetCode 974</a>
+                        <a href="https://www.geeksforgeeks.org/count-subsequences-whose-sum-is-divisible-by-k/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Count subsequences with GCD = G
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/" class="leetcode-link" target="_blank">LeetCode 2447</a>
+                        <a href="https://www.geeksforgeeks.org/count-subsequences-gcd-equal-1/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Count subsequences with LCM = L
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/" class="leetcode-link" target="_blank">LeetCode 2470</a>
+                        <a href="https://www.geeksforgeeks.org/count-subsequences-having-lcm-equal-to-k/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+            </ol>
+
+            <h3>C. Longest / Shortest</h3>
+            <ol start="11">
+                <li class="problem-item">
+                    Longest Common Subsequence (LCS)
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/longest-common-subsequence/" class="leetcode-link" target="_blank">LeetCode 1143</a>
+                        <a href="https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Longest Palindromic Subsequence
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/longest-palindromic-subsequence/" class="leetcode-link" target="_blank">LeetCode 516</a>
+                        <a href="https://www.geeksforgeeks.org/longest-palindromic-subsequence-dp-12/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Longest Increasing Subsequence (LIS)
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/longest-increasing-subsequence/" class="leetcode-link" target="_blank">LeetCode 300</a>
+                        <a href="https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Longest Decreasing Subsequence
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/longest-decreasing-subsequence/" class="leetcode-link" target="_blank">LeetCode Variation</a>
+                        <a href="https://www.geeksforgeeks.org/longest-decreasing-subsequence/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Longest Bitonic Subsequence
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/" class="leetcode-link" target="_blank">LeetCode 1671</a>
+                        <a href="https://www.geeksforgeeks.org/longest-bitonic-subsequence-dp-15/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Longest Alternating Subsequence (+, -)
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/wiggle-subsequence/" class="leetcode-link" target="_blank">LeetCode 376</a>
+                        <a href="https://www.geeksforgeeks.org/longest-alternating-subsequence/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Shortest Common Supersequence length
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/shortest-common-supersequence/" class="leetcode-link" target="_blank">LeetCode 1092</a>
+                        <a href="https://www.geeksforgeeks.org/shortest-common-supersequence/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Minimum deletions to make a string a palindrome
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/" class="leetcode-link" target="_blank">LeetCode 1312</a>
+                        <a href="https://www.geeksforgeeks.org/minimum-number-deletions-make-string-palindrome/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+            </ol>
+
+            <h3>D. Value-based Constraints</h3>
+            <ol start="19">
+                <li class="problem-item">
+                    Subsequences where max - min = K (e.g., K = 1)
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/" class="leetcode-link" target="_blank">LeetCode 1438</a>
+                        <a href="https://www.geeksforgeeks.org/count-subarrays-where-maximum-element-appears-at-least-k-times/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subsequences where max - min ≤ K
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/" class="leetcode-link" target="_blank">LeetCode 632</a>
+                        <a href="https://www.geeksforgeeks.org/count-subarrays-difference-maximum-minimum-equal-k/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subsequences containing only even numbers
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/count-number-of-nice-subarrays/" class="leetcode-link" target="_blank">LeetCode 1248</a>
+                        <a href="https://www.geeksforgeeks.org/count-subsequences-containing-only-even-numbers/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subsequences containing only odd numbers
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/" class="leetcode-link" target="_blank">LeetCode 1523</a>
+                        <a href="https://www.geeksforgeeks.org/count-subsequences-containing-only-odd-numbers/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subsequences with alternating even/odd parity
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/wiggle-subsequence/" class="leetcode-link" target="_blank">LeetCode 376</a>
+                        <a href="https://www.geeksforgeeks.org/count-subsequences-alternating-parity/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subsequences with alternating signs (+/-)
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/maximum-alternating-subsequence-sum/" class="leetcode-link" target="_blank">LeetCode 1911</a>
+                        <a href="https://www.geeksforgeeks.org/maximum-alternating-sum-of-subsequence/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subsequences where sum is a prime number
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/count-primes/" class="leetcode-link" target="_blank">LeetCode 204</a>
+                        <a href="https://www.geeksforgeeks.org/count-subsequences-sum-prime-number/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subsequences where sum is a perfect square
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/perfect-squares/" class="leetcode-link" target="_blank">LeetCode 279</a>
+                        <a href="https://www.geeksforgeeks.org/count-subsequences-sum-perfect-square/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subsequences where sum is a Fibonacci number
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/fibonacci-number/" class="leetcode-link" target="_blank">LeetCode 509</a>
+                        <a href="https://www.geeksforgeeks.org/count-subsequences-sum-fibonacci-number/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subsequences where product is a perfect square
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/valid-perfect-square/" class="leetcode-link" target="_blank">LeetCode 367</a>
+                        <a href="https://www.geeksforgeeks.org/count-subsequences-product-perfect-square/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+            </ol>
+
+            <h3>E. Order/Pattern Based</h3>
+            <ol start="29">
+                <li class="problem-item">
+                    Subsequences that are strictly increasing
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/longest-increasing-subsequence/" class="leetcode-link" target="_blank">LeetCode 300</a>
+                        <a href="https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subsequences that are strictly decreasing
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/longest-decreasing-subsequence/" class="leetcode-link" target="_blank">LeetCode Variation</a>
+                        <a href="https://www.geeksforgeeks.org/longest-decreasing-subsequence/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subsequences forming an arithmetic progression (AP)
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/longest-arithmetic-subsequence/" class="leetcode-link" target="_blank">LeetCode 1027</a>
+                        <a href="https://www.geeksforgeeks.org/longest-arithmetic-progression-dp-35/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subsequences forming a geometric progression (GP)
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/" class="leetcode-link" target="_blank">LeetCode 1218</a>
+                        <a href="https://www.geeksforgeeks.org/longest-geometric-progression/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subsequences where consecutive differences ≤ K
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/" class="leetcode-link" target="_blank">LeetCode 1438</a>
+                        <a href="https://www.geeksforgeeks.org/longest-subarray-absolute-difference-consecutive-elements-k/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subsequences forming a palindrome
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/longest-palindromic-subsequence/" class="leetcode-link" target="_blank">LeetCode 516</a>
+                        <a href="https://www.geeksforgeeks.org/longest-palindromic-subsequence-dp-12/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subsequences matching a regex pattern
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/regular-expression-matching/" class="leetcode-link" target="_blank">LeetCode 10</a>
+                        <a href="https://www.geeksforgeeks.org/regular-expression-matching/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+            </ol>
+
+            <h3>F. Optimization</h3>
+            <ol start="36">
+                <li class="problem-item">
+                    Maximum sum subsequence (no two adjacent elements in original array)
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/house-robber/" class="leetcode-link" target="_blank">LeetCode 198</a>
+                        <a href="https://www.geeksforgeeks.org/maximum-sum-such-that-no-two-elements-are-adjacent/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Maximum product subsequence
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/maximum-product-subarray/" class="leetcode-link" target="_blank">LeetCode 152</a>
+                        <a href="https://www.geeksforgeeks.org/maximum-product-subsequence/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Minimum sum subsequence
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/minimum-path-sum/" class="leetcode-link" target="_blank">LeetCode 64</a>
+                        <a href="https://www.geeksforgeeks.org/minimum-sum-subsequence/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Maximum sum increasing subsequence
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/maximum-sum-increasing-subsequence/" class="leetcode-link" target="_blank">LeetCode Similar</a>
+                        <a href="https://www.geeksforgeeks.org/maximum-sum-increasing-subsequence-dp-14/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Maximum sum bitonic subsequence
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/" class="leetcode-link" target="_blank">LeetCode 1671</a>
+                        <a href="https://www.geeksforgeeks.org/maximum-sum-bitonic-subsequence/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Minimum sum subsequence with all elements distinct
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/minimize-maximum-of-array/" class="leetcode-link" target="_blank">LeetCode Similar</a>
+                        <a href="https://www.geeksforgeeks.org/minimum-sum-subsequence-distinct-elements/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section id="subarray">
+            <h2>2. SUBARRAY QUESTION TYPES</h2>
+            <div class="definition">
+                <strong>Definition:</strong> Contiguous elements only.
+            </div>
+
+            <h3>A. Basic / Checking</h3>
+            <ol>
+                <li class="problem-item">
+                    Check if a subarray with sum = target exists
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/subarray-sum-equals-k/" class="leetcode-link" target="_blank">LeetCode 560</a>
+                        <a href="https://www.geeksforgeeks.org/find-subarray-with-given-sum/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Check if a subarray with product = target exists
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/subarray-product-less-than-k/" class="leetcode-link" target="_blank">LeetCode 713</a>
+                        <a href="https://www.geeksforgeeks.org/find-subarray-given-product/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Check if a subarray with GCD = target exists
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/" class="leetcode-link" target="_blank">LeetCode 2447</a>
+                        <a href="https://www.geeksforgeeks.org/queries-gcd-subarray/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Check if a subarray with LCM = target exists
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/" class="leetcode-link" target="_blank">LeetCode 2470</a>
+                        <a href="https://www.geeksforgeeks.org/queries-lcm-subarray/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+            </ol>
+
+            <h3>B. Sum/Product Related</h3>
+            <ol start="5">
+                <li class="problem-item">
+                    Maximum subarray sum (Kadane's algorithm)
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/maximum-subarray/" class="leetcode-link" target="_blank">LeetCode 53</a>
+                        <a href="https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Maximum subarray product
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/maximum-product-subarray/" class="leetcode-link" target="_blank">LeetCode 152</a>
+                        <a href="https://www.geeksforgeeks.org/maximum-product-subarray/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Minimum subarray sum
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/minimum-size-subarray-sum/" class="leetcode-link" target="_blank">LeetCode 209</a>
+                        <a href="https://www.geeksforgeeks.org/smallest-subarray-with-sum-greater-than-a-given-value/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subarray sum closest to zero
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/subarray-sum-equals-k/" class="leetcode-link" target="_blank">LeetCode 560</a>
+                        <a href="https://www.geeksforgeeks.org/find-subarray-closest-to-zero/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Count subarrays with sum = K
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/subarray-sum-equals-k/" class="leetcode-link" target="_blank">LeetCode 560</a>
+                        <a href="https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Count subarrays with sum divisible by K
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/subarray-sums-divisible-by-k/" class="leetcode-link" target="_blank">LeetCode 974</a>
+                        <a href="https://www.geeksforgeeks.org/count-sub-arrays-sum-divisible-k/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Count subarrays with product less than K
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/subarray-product-less-than-k/" class="leetcode-link" target="_blank">LeetCode 713</a>
+                        <a href="https://www.geeksforgeeks.org/number-subarrays-product-less-k/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Count subarrays with average ≥ X
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/maximum-average-subarray-i/" class="leetcode-link" target="_blank">LeetCode 643</a>
+                        <a href="https://www.geeksforgeeks.org/count-subarrays-average-greater-equal-x/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+            </ol>
+
+            <h3>C. Length-based</h3>
+            <ol start="13">
+                <li class="problem-item">
+                    Longest subarray with sum ≤ K
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/" class="leetcode-link" target="_blank">LeetCode 325</a>
+                        <a href="https://www.geeksforgeeks.org/longest-subarray-sum-k/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Longest subarray with sum = K
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/" class="leetcode-link" target="_blank">LeetCode 325</a>
+                        <a href="https://www.geeksforgeeks.org/longest-subarray-sum-k/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Longest subarray with all distinct elements
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/" class="leetcode-link" target="_blank">LeetCode 3</a>
+                        <a href="https://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Longest subarray with at most K distinct elements
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/" class="leetcode-link" target="_blank">LeetCode 340</a>
+                        <a href="https://www.geeksforgeeks.org/find-the-longest-substring-with-k-unique-characters-in-a-given-string/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Longest subarray where max - min ≤ K
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/" class="leetcode-link" target="_blank">LeetCode 1438</a>
+                        <a href="https://www.geeksforgeeks.org/longest-subarray-absolute-difference-consecutive-elements-k/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Longest subarray with equal number of 0s and 1s
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/contiguous-array/" class="leetcode-link" target="_blank">LeetCode 525</a>
+                        <a href="https://www.geeksforgeeks.org/largest-subarray-with-equal-number-of-0s-and-1s/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Longest subarray with equal number of vowels and consonants (string)
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/contiguous-array/" class="leetcode-link" target="_blank">LeetCode 525 (Similar)</a>
+                        <a href="https://www.geeksforgeeks.org/longest-substring-equal-number-vowels-consonants/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+            </ol>
+
+            <h3>D. Constraint Patterns</h3>
+            <ol start="20">
+                <li class="problem-item">
+                    Subarray where max - min = 1
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/fruit-into-baskets/" class="leetcode-link" target="_blank">LeetCode 904</a>
+                        <a href="https://www.geeksforgeeks.org/count-subarrays-difference-maximum-minimum-equal-1/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subarray with alternating parity (even-odd-even-odd)
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/" class="leetcode-link" target="_blank">LeetCode 1493</a>
+                        <a href="https://www.geeksforgeeks.org/longest-subarray-alternating-elements/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subarray with alternating signs (+/-)
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/maximum-alternating-subsequence-sum/" class="leetcode-link" target="_blank">LeetCode 1911</a>
+                        <a href="https://www.geeksforgeeks.org/longest-subarray-alternating-positive-negative-numbers/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subarray containing only even numbers
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/count-number-of-nice-subarrays/" class="leetcode-link" target="_blank">LeetCode 1248</a>
+                        <a href="https://www.geeksforgeeks.org/longest-subarray-consisting-of-only-even-numbers/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subarray containing only odd numbers
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/" class="leetcode-link" target="_blank">LeetCode 1523</a>
+                        <a href="https://www.geeksforgeeks.org/longest-subarray-consisting-of-only-odd-numbers/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subarray sum is prime
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/count-primes/" class="leetcode-link" target="_blank">LeetCode 204 (Related)</a>
+                        <a href="https://www.geeksforgeeks.org/count-subarrays-sum-prime/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subarray sum is perfect square
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/perfect-squares/" class="leetcode-link" target="_blank">LeetCode 279 (Related)</a>
+                        <a href="https://www.geeksforgeeks.org/count-subarrays-sum-perfect-square/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subarray sum is Fibonacci number
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/fibonacci-number/" class="leetcode-link" target="_blank">LeetCode 509 (Related)</a>
+                        <a href="https://www.geeksforgeeks.org/count-subarrays-sum-fibonacci-number/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subarray where GCD > 1
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/" class="leetcode-link" target="_blank">LeetCode 2447</a>
+                        <a href="https://www.geeksforgeeks.org/count-subarrays-gcd-greater-1/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subarray forming a palindrome (string)
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/palindromic-substrings/" class="leetcode-link" target="_blank">LeetCode 647</a>
+                        <a href="https://www.geeksforgeeks.org/count-palindrome-sub-strings-string/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subarray matching a regex pattern (string)
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/regular-expression-matching/" class="leetcode-link" target="_blank">LeetCode 10</a>
+                        <a href="https://www.geeksforgeeks.org/regular-expression-matching/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+            </ol>
+
+            <h3>E. Advanced / Sliding Window</h3>
+            <ol start="31">
+                <li class="problem-item">
+                    Smallest subarray with sum ≥ target
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/minimum-size-subarray-sum/" class="leetcode-link" target="_blank">LeetCode 209</a>
+                        <a href="https://www.geeksforgeeks.org/smallest-subarray-with-sum-greater-than-a-given-value/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Count subarrays with even sum
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/number-of-sub-arrays-with-even-sum/" class="leetcode-link" target="_blank">LeetCode 1524</a>
+                        <a href="https://www.geeksforgeeks.org/count-subarrays-even-sum/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Count subarrays where XOR = K
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/xor-queries-of-a-subarray/" class="leetcode-link" target="_blank">LeetCode 1310</a>
+                        <a href="https://www.geeksforgeeks.org/count-subarrays-xor-given-value/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Count subarrays with bitwise AND > X
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/bitwise-and-of-numbers-range/" class="leetcode-link" target="_blank">LeetCode 201</a>
+                        <a href="https://www.geeksforgeeks.org/count-subarrays-bitwise-and-greater-k/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Maximum sum circular subarray
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/maximum-sum-circular-subarray/" class="leetcode-link" target="_blank">LeetCode 918</a>
+                        <a href="https://www.geeksforgeeks.org/maximum-sum-circular-subarray/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Maximum product circular subarray
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/maximum-product-subarray/" class="leetcode-link" target="_blank">LeetCode 152 (Related)</a>
+                        <a href="https://www.geeksforgeeks.org/maximum-product-circular-subarray/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subarray sum multiple of K
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/subarray-sums-divisible-by-k/" class="leetcode-link" target="_blank">LeetCode 974</a>
+                        <a href="https://www.geeksforgeeks.org/check-if-subarray-with-sum-divisible-by-k-exists/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subarray with median ≥ X
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/find-median-from-data-stream/" class="leetcode-link" target="_blank">LeetCode 295 (Related)</a>
+                        <a href="https://www.geeksforgeeks.org/count-subarrays-median-greater-equal-x/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Subarray with mode frequency ≥ Y
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/majority-element/" class="leetcode-link" target="_blank">LeetCode 169 (Related)</a>
+                        <a href="https://www.geeksforgeeks.org/count-subarrays-mode-frequency-y/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+            </ol>
+
+            <h3>F. Multi-Dimensional Variants</h3>
+            <ol start="40">
+                <li class="problem-item">
+                    Maximum sum rectangle in 2D array
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/" class="leetcode-link" target="_blank">LeetCode 363</a>
+                        <a href="https://www.geeksforgeeks.org/maximum-sum-rectangle-2d-array/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Maximum sum submatrix no larger than K
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/" class="leetcode-link" target="_blank">LeetCode 363</a>
+                        <a href="https://www.geeksforgeeks.org/maximum-sum-submatrix-no-larger-than-k/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Largest all-1s submatrix
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/maximal-rectangle/" class="leetcode-link" target="_blank">LeetCode 85</a>
+                        <a href="https://www.geeksforgeeks.org/largest-rectangle-sub-matrix-whose-sum-0/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Count submatrices with sum = K
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/" class="leetcode-link" target="_blank">LeetCode 1074</a>
+                        <a href="https://www.geeksforgeeks.org/count-submatrices-sum-k/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+                <li class="problem-item">
+                    Submatrix with max - min ≤ K
+                    <div class="problem-links">
+                        <a href="https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/" class="leetcode-link" target="_blank">LeetCode 632 (Similar)</a>
+                        <a href="https://www.geeksforgeeks.org/count-submatrices-difference-maximum-minimum-k/" class="gfg-link" target="_blank">GFG Article</a>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section id="index">
+            <h2>3. Problem Index by Constraint</h2>
+            
+            <h3>By Difficulty Level</h3>
+            <ul>
+                <li><strong>Beginner:</strong> Basic checking problems (1-4, Subarray 1-4)</li>
+                <li><strong>Intermediate:</strong> Counting and length-based problems (5-18, Subarray 5-19)</li>
+                <li><strong>Advanced:</strong> Optimization and pattern-based problems (19+, Subarray 20+)</li>
+            </ul>
+
+            <h3>By Common Patterns</h3>
+            <ul>
+                <li><strong>Dynamic Programming:</strong> LCS, LIS, Maximum sum problems</li>
+                <li><strong>Sliding Window:</strong> Longest/Shortest subarray problems</li>
+                <li><strong>Two Pointers:</strong> Subsequence checking, subarray sum problems</li>
+                <li><strong>Prefix Sums:</strong> Subarray sum problems, divisibility checks</li>
+                <li><strong>Hash Maps:</strong> Count problems, distinct element problems</li>
+            </ul>
+
+            <h3>By Company Tags</h3>
+            <ul>
+                <li><strong>Google:</strong> LCS, Maximum subarray, Longest substring problems</li>
+                <li><strong>Facebook:</strong> Palindromic problems, Product of array problems</li>
+                <li><strong>Amazon:</strong> Two sum variations, Subarray sum problems</li>
+                <li><strong>Microsoft:</strong> Longest increasing subsequence, Bitonic subsequence</li>
+                <li><strong>Apple:</strong> String subsequence problems, Pattern matching</li>
+            </ul>
+        </section>
+
+        <div style="margin-top: 40px; padding: 20px; background-color: #f8f9fa; border-radius: 8px; text-align: center;">
+            <p><strong>📚 Study Tips:</strong></p>
+            <ul style="list-style: none; padding: 0;">
+                <li>🎯 Start with basic checking problems before moving to optimization</li>
+                <li>🔄 Practice both brute force and optimized solutions</li>
+                <li>📝 Understand the difference between subsequence and subarray clearly</li>
+                <li>⚡ Master sliding window and two-pointer techniques for subarrays</li>
+                <li>🧠 Learn dynamic programming patterns for subsequence problems</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
